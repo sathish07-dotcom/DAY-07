@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL IN CSS</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        h1,h2{
+            background-color: yellow;
+            text-align: center;
+            color: red;
+            font-size: 50px;
+        }
+        li{
+            font-size: 30px;
+            color: blue;
+            font-weight: bold;
+        }
+        .box1{
+            width: 220px;
+            font-size: 20px;
+            font-weight: bold;
+            border: 2px green solid;
+            background-color: antiquewhite;
+            margin-bottom: 50px;
+        }
+        .box2{
+            height: 220px;
+            width:50px;
+            font-size: 20px;
+            font-weight: bold;
+            border: 2px green solid;
+            background-color: antiquewhite;
+        }
+        #a{
+            border: 2px aqua solid;
+        }
+        .margin1, .margin2, .margin3, .margin4{
+            width: 200px;
+            height: 200px;
+            border: 2px red solid;
+            display: inline-block;
+            margin: 50px;
+        }
+        .margin1 p{
+            margin-top: 50px;
+        }
+        .margin2 p{
+            margin-bottom: 50px;
+        }
+        .margin3 p{
+            margin-left: 100px;
+        }
+        .margin4 p{
+            margin-right: 100px;
+        }
+        #b{
+            border: 3px red solid;
+            display: flex;
+        }
+        .border1, .border2, .border3{
+           height: 250px;
+           width: 200px;
+           margin: 40px;
+        }
+        .border1{
+            border: 5px green solid;
+        }
+        .border2{
+            border: 5px black double;
+        }
+        .border3{
+            border: 5px red dotted;
+        }
+        #A{
+            border: 3px red solid;
+            display: flex;
+        }
+        .padding1,.padding2,.padding3,.padding4{
+            width: 200px;
+            height: 230px;
+            border: green 2px solid;
+            margin: 40px;
+        }
+        .padding1{
+            padding-top: 50px;
+        }
+        .padding2{
+            padding-right: 50px;
+        }
+        .padding3{
+            padding-bottom: 50px;
+        }
+        .padding4{
+            padding-left: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>css box model</h1>
+<ol>
+    <li>width</li>
+    <li>height</li>
+    <li>Margin</li>
+    <li>Border</li>
+    <li>Padding</li>
+</ol>
+<h2>CSS HEIGHT & WIDTH</h2>
+<div class="box1">CSS box model width</div>
+<div class="box2">CSS box model height</div>
+
+<h2>CSS MARGIN</h2>
+<div id="a">
+<div class="margin1"><p>Margin Top</p></div>
+<div class="margin2"><p>Margin Bottom</p></div>
+<div class="margin3"><p>Margin Left</p></div>
+<div class="margin4"><p>Margin Right</p></div>
+</div>
+
+<h2>CSS BORDER</h2>
+<div id="b">
+    <div class="border1">Good afternoon</div>
+    <div class="border2">Good afternoon</div>
+    <div class="border3">Good afternoon</div>
+</div>
+
+<h2>CSS PADDING</h2>
+<div id="A">
+<div class="padding1">padding top</div>
+<div class="padding2">padding right</div>
+<div class="padding3">padding bottom</div>
+<div class="padding4">padding left</div>
+</div>
+</body>
+</html>
